@@ -6,9 +6,7 @@ function ArticleList({posts}){
             {
                 posts.map((props) => (
                         <Article key = {props.id}
-                        title = {props.title}
-                        date ={props.date}
-                        preview ={props.preview}/>
+                        props = {props} />
                    
                 ))}
         </main>

@@ -1,13 +1,16 @@
 import React from "react";
 
-function Article(props){
+function Article({ props }){
     return (
-        <div>
+       <div>
+                    <h3>{props.title}</h3>
+                    <small>{props.date}</small>
+                    <p>{props.preview}</p>
 
-            <h3>{props.title}</h3>
-            <small>{props.date}</small>
-            <p>{props.preview}</p>
         </div>
+            
+            
+        
     
         
     )
